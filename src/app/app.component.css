@@ -1,0 +1,18 @@
+.pull-absolute-right{
+    position: absolute;
+    right: 15px;
+}
+
+
+.scroll-top-container{
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.scroll-top-icon{
+    cursor: pointer;
+    color: #0D6EFD !important; 
+    font-size:xx-large !important;
+}

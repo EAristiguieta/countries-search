@@ -1,0 +1,7 @@
+img {
+    width: 25px;
+  }
+
+  a:hover i {
+    color: #0D6EFD !important; 
+  }
