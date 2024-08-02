@@ -1,2 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeicons/primeicons.css";
+
+* {
+    font-family: "Roboto Mono", monospace;
+    scrollbar-color: white #3d3d3d;
+    scrollbar-width: thin;
+  }
