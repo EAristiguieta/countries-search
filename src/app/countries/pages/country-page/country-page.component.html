@@ -37,6 +37,19 @@
           <strong>Localizacion: </strong>
           <a class="pi pi-map" [href]="country.maps.googleMaps"></a>
         </li>
+        <li *ngIf="country.name.common == 'Venezuela'" class="list-group-item">
+          <div class="d-flex">
+            <strong class="me-2">Libertad:</strong> Pronto
+
+            <div class="mx-1">
+              <img
+                class="icon-venezuela"
+                src="venezuela-heart.png"
+                alt="icon-heart-venezuela"
+              />
+            </div>
+          </div>
+        </li>
       </ul>
     </div>
   </div>

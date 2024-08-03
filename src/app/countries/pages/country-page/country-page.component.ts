@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CountriesService } from '../../services/countries.service';
-import { switchMap } from 'rxjs';
+import { switchMap, tap } from 'rxjs';
 import { Country } from '../../interfaces/country';
 import { CommonModule, NgIf } from '@angular/common';
 
@@ -27,6 +27,8 @@ export class CountryPageComponent implements OnInit {
       .pipe(
         switchMap(({ id }) =>
           this.countriesService.searchCountryByAlphaCode(id)
+        ),
+        tap(res => console.log(res)
         )
       )
       .subscribe((country) => {
